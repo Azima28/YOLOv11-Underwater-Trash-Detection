@@ -35,12 +35,12 @@ The model was trained for **200 epochs** over **2.219 hours**, showing significa
 | **Trash** | 1408 | 1687 | 0.961 | 0.910 | 0.954 | 0.686 |
 
 ### Performance Curves
-![Training Results](train/results.png)
+![Training Results](training_result/results.png)
 
 ### Model Evaluation
 | Confusion Matrix | Validation Predictions |
 | :---: | :---: |
-| ![Confusion Matrix](train/confusion_matrix.png) | ![Validation Predictions](train/val_batch0_pred.jpg) |
+| ![Confusion Matrix](training_result/confusion_matrix.png) | ![Validation Predictions](training_result/val_batch0_pred.jpg) |
 
 ---
 
@@ -57,7 +57,7 @@ To use the trained YOLO11 model for inference:
 from ultralytics import YOLO
 
 # Load the model
-model = YOLO('train/weights/best.pt')
+model = YOLO('training_result/weights/best.pt')
 
 # Predict on an image
 results = model.predict(source='result_yolov11.png', save=True, imgsz=416)
@@ -67,7 +67,7 @@ results = model.predict(source='result_yolov11.png', save=True, imgsz=416)
 
 ## 📂 Project Structure
 - `yolov11.ipynb`: Main notebook covering dataset integration, training, and validation.
-- `train/`: Comprehensive training logs, weights, and evaluation metrics.
+- `training_result`: Comprehensive training logs, weights, and evaluation metrics.
 - `result_yolov11.png`: Sample showcase of the YOLO11 model predictions.
 
 ---
