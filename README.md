@@ -25,7 +25,9 @@ The model was trained for **200 epochs** over **2.219 hours**, showing significa
 - **Framework**: Ultralytics YOLO11
 - **Model**: YOLO11s (9.4M parameters)
 - **Image Size**: 416x416
-
+- **Training Time**: 2.219 Hours
+- **Epochs**: 200
+  
 ### Validation Benchmarks
 | Class | Images | Instances | Precision (P) | Recall (R) | mAP50 | mAP50-95 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
